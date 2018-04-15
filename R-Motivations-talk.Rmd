@@ -16,9 +16,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Outline
 
-- What is Data Science and what's a Data Scientist?
+- What is R and Data Science?
 
-- What tools are used in Data Science now? 
+- What languages (tools) are used in Data Science now? 
 
 - Where did R and Data Science come from? 
 
@@ -196,7 +196,7 @@ knitr::include_graphics(path)
 
 [Source: Data organization in spreadsheets](https://peerj.com/preprints/3183/)
 
-## ...But move beyond spreadsheets
+## ...but move beyond spreadsheets
 
 _Although spreadsheet programs are used for small "scratchpad" applications, they are also used to develop many large applications. In recent years, we have learned a good deal about the errors that people make when they develop spreadsheets. In general, errors seem to occur in a few percent of all cells, meaning that for large spreadsheets, the issue is how many errors there are, not whether an error exists. These error rates, although troubling, are in line with those in programming and other human cognitive domains. In programming, we have learned to follow strict development disciplines to eliminate most errors._ - Raymond Panko 
 
@@ -228,11 +228,11 @@ knitr::include_graphics(path)
 ## IEEE, general language rankings {.columns-2 .smaller}
 
 
-Amazingly, in the wider world of programming languages, the `R Statistical Programming language`, 
+Amazingly, in the wider world of programming languages, the `R Statistical Programming language`,
 created by Data Scientists for **Data Scientists**, makes the "top 10" general programming language cut, reflecting it's growing use across scientific domains, business sectors, and Enterprises. It is very surprising for a specialized language to rank so high.
 
 
-`Python`'s popularity is due to it's high use in Web site development, DevOps, and the west coast technology industry in general. Technology is the fastest growing sector in the economy at present. Use in web development and fast adaptation in **Data Science** has put it on top.
+`Python`'s popularity is mainly due to it's high use in Web site development, DevOps, and the west coast technology industry in general. Technology is the fastest growing sector in the economy at present. Use in web development and recent adaptation in **Data Science** has put it on top.
 
 
 `C` and `C++` remains a stalwarts, and underpins `R`. 
@@ -257,9 +257,22 @@ path <- paste0(getwd(), "/images/SO-growth.png")
 knitr::include_graphics(path)
 ```
 
+## Scripting languages: the core of Data Science
+High Level languages like `R` interface with low level languages and Numerical computing libraries. 
+
+They are easier to program so analysts can fail fast on their research and start again. Most research ideas and science fail, so emphasis is placed on how fast one can churn them out.
+
+Package ecosystem inherent to these languages allows scientists to contribute their work, with software they write. This has led to an explosion in the sharing of work across scientific disciplines.
+
+
 ## Python: From Web sites to Data Science {.columns-2 .smaller}
 
-_The fastest-growing use of `Python` is for data science, machine learning and academic research. This is particularly visible in the growth of the pandas package, which is the fastest-growing `Python`-related tag on the site. As for which industries are using `Python`, we found that it is more visited in a few industries, such as electronics, manufacturing, software, government, and especially universities._
+According to Stack Overflow:
+
+_The fastest-growing use of `Python` is for data science, machine learning and academic research. This is particularly visible in the growth of the pandas package, which is the fastest-growing `Python`-related tag on the site._
+
+While Data Science with Python is really growing, its current popularity stems from 
+its combined presence in web development, Sysadmin, and DevOps.
 
 
 **Data Science:** `pandas`, `numpy`, `matplotlib`
@@ -285,7 +298,7 @@ _`R` is growing across industries, but visits are generally growing faster in in
 
 _`R` is most visited from universities, where it's a common choice for academic research, especially in the social sciences and biology._
 
-_The industry with the second-highest share of `R` visitors, by a close margin, is healthcare. That probably won't come as a surprise to biostatisticians, since `R` is the tool of choice for many statistical methods necessary for clinical studies and bioinformatics._ (R is mature. [It is used and OK'd by the FDA for drug trials](http://blog.revolutionanalytics.com/2012/06/fda-r-ok.html); Python is not...yet)
+_The industry with the second-highest share of `R` visitors, by a close margin, is healthcare. That probably won't come as a surprise to biostatisticians, since `R` is the tool of choice for many statistical methods necessary for clinical studies and bioinformatics._ (R is mature. [It is used and OK'd by the FDA for drug trials](http://blog.revolutionanalytics.com/2012/06/fda-r-ok.html)
 
 
 _One industry that doesn't visit as much of `R`, relative to other technologies, is tech: software and web companies._ 
@@ -300,32 +313,9 @@ path <- paste0(getwd(), "/images/SO-R.png")
 knitr::include_graphics(path)
 ```
 
-## Scripting languages: the core of Data Science.
-High Level languages like `R` interface with low level languages and Numerical computing libraries. 
-
-They are easier to program so analysts can fail fast on their research and start again. Most research ideas and science fail, so emphasis is placed on how fast one can churn them out.
-
-Package ecosystem inherent to these languages allows scientists to contribute their work, with software they write. This has led to an explosion in the sharing of work across scientific disciplines.
-
-
-## R the least disliked Data Science Language! {.columns-2 .smaller}
-
-When choosing a first scripting language, narrow it down. Research your domain or industry and discover what the people and companies you are inspired by are using. Have your values and interests drive the process.
-
-_I've been a lifelong Mac and UNIX user, and nearly all of my programming in college and graduate school was centered around Python and R. Despite that, I was happy to join a company with a .NET stack, and I'm glad I did— because I loved the team, the product, and the data._ _**I can't speak for anyone else, but I'm glad I defined myself in terms of what work I wanted to do, and not something I wanted to avoid.**_ 
-
-**David Robinson, Data Scientist at Stack Overflow**
-
-```{r, out.width = "600px"}
-path <- paste0(getwd(), "/images/SO-wars.png")
-knitr::include_graphics(path)
-```
-
-[Source: Disliked Programming Languages](https://stackoverflow.blog/2017/10/31/disliked-programming-languages/)
-
 ## Task Views in R {.columns-2 .smaller}
 
-I found `R` because I wanted to use the most cutting edge, statistical modeling libraries for available. With over 12,000 packages available beyond base `R`, the community organizes noteworthy and mature approaches by research domain. They can ALL be installed with a few commands.
+Years ago, I discovered `R` because I needed to use the most cutting edge, statistical modeling libraries available. With over 12,000 packages available beyond base `R` on CRAN alone, the community organizes noteworthy and mature approaches by research domain. They can ALL be installed with a few commands.
 
 ```{r, out.width = "400px"}
 path <- paste0(getwd(), "/images/Task-View-1.png")
@@ -340,51 +330,24 @@ knitr::include_graphics(path)
 
 https://cran.r-project.org/web/views/
 
-# Data Science in Practice
 
-## A Data Science Project {.smaller}
+## R the least disliked Data Science Language! {.columns-2 .smaller}
 
-```{r, out.width = "666px", fig.align="center"}
-path <- paste0(getwd(), "/images/DS-Workflow.png")
-knitr::include_graphics(path)
-```
-**First Mile**: _Import_ data and prepare for Analysis. Hadley Wickham's [_Tidy_ Data:](https://www.jstatsoft.org/article/view/v059i10) Each variable is a column, each observation is a row, and each type of observational unit is a table. Alot of time is spent here.
+When choosing a first scripting language, narrow it down. Research your domain or industry and discover what the people and companies you are inspired by are using. Have your values and interests drive the process.
 
-**Data Analysis**: _Transform_ data and create new variables with `log`, `exponents`, differencing, etc. _Visualizations_ help spot outliers, remaining data problems, and reveal insights to test with _Models_. Predictive modeling frameworks like [Max Kuhn's `caret`](https://topepo.github.io/caret/index.html) provide tools to quickly iterate over the entire process.
+_I've been a lifelong Mac and UNIX user, and nearly all of my programming in college and graduate school was centered around Python and R. Despite that, I was happy to join a company with a .NET stack, and I'm glad I did— because I loved the team, the product, and the data._ _**I can't speak for anyone else, but I'm glad I defined myself in terms of what work I wanted to do, and not something I wanted to avoid.**_ 
 
-**Last Mile**: _Communicate_ results with visualizations and good writing, exporting to static or interactive documents, webpages, apps, or presentation slides. Packages like [R Markdown](https://rmarkdown.rstudio.com/gallery.html) provides the scaffolding.
-
-[Image Source: R for Data Science](http://r4ds.had.co.nz/introduction.html)
-
-
-## No BS DataScience
-
-Szilard Pfafka: Your data is just not that big...
+**David Robinson, Data Scientist** @[stackoverflow](https://stackoverflow.com/). **Prefers R for Data Science**
 
 ```{r, out.width = "600px"}
-path <- paste0(getwd(), "/images/szilard-data-size.png")
+path <- paste0(getwd(), "/images/SO-wars.png")
 knitr::include_graphics(path)
 ```
 
-
-[Source: dataset-sizes-kdnuggets](https://github.com/szilard/dataset-sizes-kdnuggets)
-
-
-## No BS DataScience
-
-...and your processing power is getting bigger!
-
-```{r, out.width = "300px"}
-path <- paste0(getwd(), "/images/szilard-ram-size.png")
-knitr::include_graphics(path)
-```
+[Source: Disliked Programming Languages](https://stackoverflow.blog/2017/10/31/disliked-programming-languages/)
 
 
-[Source: dataset-sizes-kdnuggets](https://github.com/szilard/dataset-sizes-kdnuggets)
-
-
-
-# Some Data Science History
+# (Some) R and Data Science History
 
 
 ## 1880: Statistician solves a Big Data problem {.columns-2 .smaller}
@@ -434,9 +397,27 @@ Sources: [Census.gov/history](https://www.census.gov/history/www/census_then_now
 [Source: Memories of John W. Tukey](http://ect.bell-labs.com/sl/tukey/)
 
 
-## Anscombe and his quartet {.smaller .columns-2}
+## 1977: John Tukey's Exploratory Data Analysis {.columns-2 .smaller}
 
-_"Graphs in Statistical Analysis"_ - F.J. Anscombe
+Spending over 30 years developing ground breaking methods still in use today,
+Tukey concludes visualization as one of the most important parts of data analysis.
+
+**"Since the aim of exploratory data analysis is to learn what seems to be, it should be no surprise that pictures play a vital role in doing it well. There is nothing better for making you think of questions you had forgotten to ask (even mentally)"** - John Tukey
+
+Tukey's championing of EDA encouraged the development of statistical computing packages, especially `S` at Bell Labs. The `S` programming language inspired the systems `S-PLUS` and **`R`**. This family of statistical-computing environments featured vastly improved dynamic visualization capabilities, which allowed statisticians to identify outliers, trends and patterns in data that merited further study.
+
+
+
+```{r, out.width = "300px"}
+path <- paste0(getwd(), "/images/Tukey-EDA.jpg")
+knitr::include_graphics(path)
+```
+
+## Anscombe and his 1973 data quartet {.smaller .columns-2}
+
+Tukey and Anscombe often spoke of graphics as analysis.
+Anscombe's plots illustrates. All 4 data sets return nearly identical linear regression coefficient estimates. However, viewing graphs of the data reveals each is quite different.
+
 
 ```{r, warning=FALSE, out.width= "450px"}
 data("anscombe")
@@ -462,65 +443,63 @@ gg <- ggplot(anscombe.data, aes(x = x, y = y)) +
 gg + theme_bw()
 ```
 
+[Original Paper PDF: _Graphs in Statistical Analysis"](http://www.sjsu.edu/faculty/gerstman/StatPrimer/anscombe1973.pdf)
+
 ```{r, out.width = "400px"}
 path <- paste0(getwd(), "/images/anscombe.png")
 knitr::include_graphics(path)
 ```
 
-## 1977: John Tukey's Exploratory Data Analysis {.columns-2 .smaller}
 
-Spending over 30 years developing ground breaking methods still in use today,
-Tukey concludes visualization as one of the most important parts of data analysis.
+## Statistical/Machine Learning {.columns-2 .smaller}
 
-**"Since the aim of exploratory data analysis is to learn what seems to be, it should be no surprise that pictures play a vital role in doing it well. There is nothing better for making you think of questions you had forgotten to ask (even mentally)"** - John Tukey
+Bridges statistics and computer science. Many early innovators among `S` & `R` communities at Stanford and Bell Labs.
 
-Tukey's championing of EDA encouraged the development of statistical computing packages, especially `S` at Bell Labs. The `S` programming language inspired the systems `S-PLUS` and **`R`**. This family of statistical-computing environments featured vastly improved dynamic visualization capabilities, which allowed statisticians to identify outliers, trends and patterns in data that merited further study.
-
-
-
-```{r, out.width = "300px"}
-path <- paste0(getwd(), "/images/Tukey-EDA.jpg")
-knitr::include_graphics(path)
-```
-
-
-## Leo Breiman: Statistical/Machine Learning {.columns-2 .smaller}
-
-Bridges gap between statistics and computer science known as "Statistical Learning". Attempts to rename it "Machine Learning" are perplexing.
-
-**1984** Classification and Regression Trees, Leo Breiman and Jerome H. Friedman
+**1984** Classification and Regression Trees
 
 **1994** Bagging Predictors, Leo Breiman
 
-**1995** Random Decision Forests, Tin Kam Ho at **Bell Labs**
+**1995** Random Decision Forests, Tin Kam Ho at **Bell**
 
-**1999** Random Forest - _Random Features_, Leo Breiman
+**1999** `Random Forest` - _Random Features_, Breiman
 
-**2001 _The Two Cultures_**. Leo Breiman.
+**2000** `AdaBoost` Additive Logistic Regression: A Statistical View of Boosting. Jerome Friedman, Trevor Hastie, Rob Tibshirani.
 
-**2002** `randomForest` package. Breiman & Cutler's Fortran Code ported to R by Andy Liaw and Matthew Wiener.
+**2001** [_The Two Cultures_](https://projecteuclid.org/euclid.ss/1009213726), Leo Breiman.
 
-[Source Revolution Analytics blog: A Thumbnail History of Ensemble Methods](http://blog.revolutionanalytics.com/2014/03/a-thumbnail-history-of-ensemble-methods.html)
+**2002** `randomForest` R package. Breiman's Fortran ported to R by Andy Liaw and Matthew Wiener.
 
+[Revolution Analytics: History of Ensemble Methods](http://blog.revolutionanalytics.com/2014/03/a-thumbnail-history-of-ensemble-methods.html)
 
 ```{r, out.width = "300px"}
 path <- paste0(getwd(), "/images/CART-Book.jpg")
 knitr::include_graphics(path)
 ```
 
-## Jerome Friedman: Statistical/Machine Learning  
 
-A Gradient Boosting Machine
-xgboost Current Kaggle competition winner
+# (Some) Data Analysis Software History
 
-**1984** Classification and Regression Trees, Leo Breiman and Jerome H. Friedman
+## Statistical Analsyis System (SAS) {.columns-2 .smaller}
 
-**2000 AdaBoost** Additive Logistic Regression: A Statistical View of Boosting. Jerome Friedman, Trevor Hastie, Rob Tibshirani.
+**1966** The development of SAS began in 1966 after North Carolina State University rehired Anthony Barr to program his analysis of variance and regression software. The project was funded by the **National Institute of Health** to analyze agricultural data to improve crop yields
+
+**1972** After issuing the first release of SAS, the project lost its funding. According to James Goodnight (the other project leader) this was because NIH only wanted to fund projects with medical applications. There was some disagreement on what the funding was used for.
+
+**1976** Barr, Goodnight, Sall, and Helwig removed the project from North Carolina State and privatize it, incorporating it into SAS Institute, Inc.
+
+```{r, out.width = "300px"}
+path <- paste0(getwd(), "/images/SAS.png")
+knitr::include_graphics(path)
+```
+
+**1980s - present** Private company grows to 3.2 Billion in annual sales and founders get rich! 
 
 
-# Language History
 
-## 1977: Bell Labs,S, & R {.columns-2 .smaller}
+However extremely large licensing costs and proprietary source code doesn't allow leading researchers in academia or industry to adapt the software to current needs. As Data Analysis evolves into an interdisciplinary field, begins loses market share to free open source alternatives that have more flexibility to evolve quickly.  
+
+
+## 1977: Bell Labs, S, and R {.columns-2 .smaller}
 
 *2000* John Chambers, core creator of the S Language
 
@@ -528,7 +507,7 @@ _The essence of what we took from him in thinking about S, for example, can be s
 
 **_Better to have an approximate answer to the right question than a precise answer to the wrong question._**
 
-_To me, this means that the data and the real goals of the analysis should suggest what questions need posing. A convenient or conventional summary is often not good enough. In this sense, I would say that enabling users to ask the ``right'' question (and to get a usable answer) is the most central design principle behind S, and behind nearly all the other research here on statistical software, before and since._ 
+_To me, this means that the data and the real goals of the analysis should suggest what questions need posing. A convenient or conventional summary is often not good enough. In this sense, I would say that enabling users to ask the "right" question (and to get a usable answer) is the most central design principle behind S, and behind nearly all the other research here on statistical software, before and since._ 
 
 ```{r, out.width = "150px"}
 path <- paste0(getwd(), "/images/201309_RandS_timeline.jpg")
@@ -559,7 +538,7 @@ R succeeds today because it is very easy to extend.
 
 If the driving force behind S was interactivity, for R it was extensibility. Partly this extensibility stems from S, which was designed to interface easily with outside elements (specifically with subroutine libraries). R retains this interfacing capability so it easily incorporates native code as well as objects, analysis, and visualizations created in other programs, giving R users options outside of R. And R is extensible also because it's open source.
 
-Objects created in other systems and then imported into R are accessed in the same way R objects are accessed. It's easy to write native code in Java, C++, or any other language, and then have R call the code directly, with almost no loss in speed or performance.
+Objects created in other systems and then imported into R are accessed in the same way R objects are accessed. If one can write code in Java, C, C++, or other languages, mature bindings can use R to call the code directly, with little loss in speed or performance.
 
 
 [Source: From S to R: 35 Years of Leadership in Statistical Computing](http://www.research.att.com/articles/featured_stories/2013_09/201309_SandR.html)
@@ -570,34 +549,91 @@ path <- paste0(getwd(), "/images/201309_RandS_timeline.jpg")
 knitr::include_graphics(path)
 ```
 
+## Python: From WebDev to Data Science
 
-## Statistical Analsyis System (SAS) {.columns-2 .smaller}
+General discussion 
 
-**1966** The development of SAS began in 1966 after North Carolina State University rehired Anthony Barr to program his analysis of variance and regression software. The project was funded by the **National Institute of Health** to analyze agricultural data to improve crop yields
+- Created in 1991 by Guido Von Rossum who wanted prettier `ABC` language.
 
-**1972** After issuing the first release of SAS, the project lost its funding. According to James Goodnight (the other project leader) this was because NIH only wanted to fund projects with medical applications. There was some disagreement on what the funding was used for.
+- Mostly a webDev and SysAdmin language until the more recent release of `Pandas`, making the data.frame object available for the very first time. Author Wes McKinney works closely with senior developers in the `R` community who in the spirit of open source, show him the way.
 
-**1976** Barr, Goodnight, Sall, and Helwig removed the project from North Carolina State and privatize it, incorporating it into SAS Institute, Inc.
+- Python is also open source and has a large community of developers who help evolve it faster than any other data analysis software since `R`.
 
-```{r, out.width = "300px"}
-path <- paste0(getwd(), "/images/SAS.png")
+- Leap frogging ahead has left Python without many important graphical analysis tools and statistical/machine learning techniques that are still widely used in Data Analysis.
+
+- A good language for learning general programming principals
+
+# R and Data Science in Practice
+
+## An R Projects workflow {.smaller}
+
+```{r, out.width = "666px", fig.align="center"}
+path <- paste0(getwd(), "/images/DS-Workflow.png")
+knitr::include_graphics(path)
+```
+**First Mile**: _Import_ data and prepare for Analysis. Hadley Wickham's [_Tidy_ Data:](https://www.jstatsoft.org/article/view/v059i10) Each variable is a column, each observation is a row, and each type of observational unit is a table. Alot of time is spent here.
+
+**Data Analysis**: _Transform_ data and create new variables with `log`, `exponents`, differencing, etc. _Visualizations_ help spot outliers, remaining data problems, and reveal insights to test with _Models_. Predictive modeling frameworks like [Max Kuhn's `caret`](https://topepo.github.io/caret/index.html) provide tools to quickly iterate over the entire process.
+
+**Last Mile**: _Communicate_ results with visualizations and good writing, exporting to static or interactive documents, webpages, apps, or presentation slides. Packages like [R Markdown](https://rmarkdown.rstudio.com/gallery.html) provides the scaffolding.
+
+[Image Source: R for Data Science](http://r4ds.had.co.nz/introduction.html)
+
+
+## What about 'Big Data' and R? {.smaller .columns-2}
+
+Szilard Pfafka: Physics PhD, chief (data) scientist @Epoch, and (visiting) UNCLA professor.
+
+He points out that most people's data is just not that big. Less than 10% work with
+data larger than 8 Terabytes.
+
+```{r, out.width = "500px"}
+path <- paste0(getwd(), "/images/szilard-data-size.png")
 knitr::include_graphics(path)
 ```
 
-**1980s - present** Private company grows to 3.2 Billion in annual sales and founders get rich! 
+
+[Szilard Pfafka Source: dataset-sizes-kdnuggets](https://github.com/szilard/dataset-sizes-kdnuggets)
+
+
+## What about 'Big Data' and R?  {.smaller .columns-2}
+
+...and he points out that processing power is getting bigger! 
+
+R's ability to compute on big data scales with processing power. 
+
+Processing power is increasing on the PC and cloud. Amazon AWS and Microsoft Azure provide access to lots of processing power for cheap.
+
+This allows one to develop scripts locally on smaller sample data and then load scripts with
+bigger data into the cloud.
+
+[Check out Microsoft Azure and R here](https://azure.microsoft.com/en-us/)
+
+[2017-n1 meetup on useing AWS and R here](https://github.com/Chicago-R-User-Group/2017-n1-Meetup/blob/master/Hultman%2C%20Keith-Setting%20Up%20RStudio%20on%20AWS.pdf)
 
 
 
-However extremely large licensing costs and proprietary source code doesn't allow leading researchers in academia or industry to adapt the software to current needs. As Data Science distinguishes itself as a multidisciplinary field, begins loses market share to free open source alternatives that have more flexibility. 
+```{r, out.width = "300px"}
+path <- paste0(getwd(), "/images/szilard-ram-size.png")
+knitr::include_graphics(path)
+```
+
+
+[Szilard Pfafka Source: dataset-sizes-kdnuggets](https://github.com/szilard/dataset-sizes-kdnuggets)
+
+
+
+
 
 
 ## How to learn more?
 
-Start with foundations.
-
 General discussion
 
-Datacamp is good for  R syntax as well as how-tos, compliments traditional education.
+- Foundations in Math and Statistics are important
 
-Signup for meetups and go. They are free and keep you current.
+
+- Datacamp.com is excellent for learning how to do specific things and learn the language of R (and Python too for the same money)
+
+- Signup for meetups and go! They are free, keep you current.
 
