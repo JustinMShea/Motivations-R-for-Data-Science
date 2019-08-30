@@ -281,7 +281,27 @@ knitr::include_graphics(path)
 
 ## Task Views in R {.columns-2 .smaller}
 
-Years ago, I discovered `R` because I needed to use the most cutting edge, statistical modeling libraries available. With over 12,000 packages available beyond base `R` on CRAN alone, the community organizes noteworthy and mature approaches by research domain. They can ALL be installed with a few commands.
+```{r, echo=FALSE, cache=TRUE, message=FALSE, warning=FALSE}
+# Code from https://blog.revolutionanalytics.com/2015/06/how-many-packages-are-there-really-on-cran.html
+
+types <- c("source", "win.binary", 
+           "mac.binary", "mac.binary.mavericks")
+
+CRANmirror <- "https://cloud.r-project.org/"
+
+pdb <- lapply(types, function(x){
+  cran <- contrib.url(repos = CRANmirror, 
+                      type = x)
+  available.packages(contriburl = cran, type = x)
+})
+names(pdb) <- types
+
+# Display first few packages for each type
+pkgs <- sapply(pdb, rownames)
+pkgNumber <- NROW(pkgs$source)
+```
+
+Years ago, I discovered `R` because I needed to use the most cutting edge, statistical modeling libraries available. With over `r pkgNumber` packages available beyond base `R` as of this rendering, the community organizes noteworthy and mature approaches by research domain. They can ALL be installed with a few commands.
 
 ```{r, out.width = "400px"}
 path <- paste0(getwd(), "/images/Task-View-1.PNG")
