@@ -582,10 +582,11 @@ knitr::include_graphics(path)
 
 General discussion
 
-- Foundations in Math and Statistics are important
+- Continually study Statistics and Machine Learning, that is core of the work.
 
+- [Practical Data Science with R](https://www.manning.com/books/practical-data-science-with-r-second-edition) is an excellent book
 
-- Datacamp.com is excellent for learning how to do specific things and learn the language of R (and Python too for the same money)
+- [Datacamp.com](https://www.datacamp.com/) is excellent for learning how to do specific things and learn the language of R and Python.
 
-- Signup for meetups and go! They are free, keep you current.
+- Signup for R, Python, and general Data [meetups](https://www.meetup.com/) and go! They are free, keep you current.
 
