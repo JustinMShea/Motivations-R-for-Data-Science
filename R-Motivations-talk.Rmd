@@ -239,7 +239,7 @@ created by Data Scientists for **Data Scientists**, makes the "top 10" general p
 Side note: R package developers use `C` and `C++` to speed up `R`.
 
 ```{r, out.width = "500px"}
-path <- paste0(getwd(), "/images/ieee-10.png")
+path <- paste0(getwd(), "/images/ieee-10.PNG")
 knitr::include_graphics(path)
 ```
 
@@ -253,7 +253,7 @@ Stack Overflow graphs done with `R` helps us visualize that `R` is growing fast!
 )
 
 ```{r, out.width = "500px", fig.align="center"}
-path <- paste0(getwd(), "/images/SO-growth.png")
+path <- paste0(getwd(), "/images/SO-growth.PNG")
 knitr::include_graphics(path)
 ```
 
@@ -287,7 +287,7 @@ its combined presence in web development, Sysadmin, and DevOps.
 
 
 ```{r, out.width = "500px"}
-path <- paste0(getwd(), "/images/SO-Py.png")
+path <- paste0(getwd(), "/images/SO-Py.PNG")
 knitr::include_graphics(path)
 ```
 
@@ -309,7 +309,7 @@ _One industry that doesn't visit as much of `R`, relative to other technologies,
 
 
 ```{r, out.width = "500px"}
-path <- paste0(getwd(), "/images/SO-R.png")
+path <- paste0(getwd(), "/images/SO-R.PNG")
 knitr::include_graphics(path)
 ```
 
@@ -318,13 +318,13 @@ knitr::include_graphics(path)
 Years ago, I discovered `R` because I needed to use the most cutting edge, statistical modeling libraries available. With over 12,000 packages available beyond base `R` on CRAN alone, the community organizes noteworthy and mature approaches by research domain. They can ALL be installed with a few commands.
 
 ```{r, out.width = "400px"}
-path <- paste0(getwd(), "/images/Task-View-1.png")
+path <- paste0(getwd(), "/images/Task-View-1.PNG")
 knitr::include_graphics(path)
 ```
 
 
 ```{r, out.width = "400px"}
-path <- paste0(getwd(), "/images/Task-View-2.png")
+path <- paste0(getwd(), "/images/Task-View-2.PNG")
 knitr::include_graphics(path)
 ```
 
@@ -340,7 +340,7 @@ _I've been a lifelong Mac and UNIX user, and nearly all of my programming in col
 **David Robinson, Data Scientist** @[stackoverflow](https://stackoverflow.com/). **Prefers R for Data Science**
 
 ```{r, out.width = "600px"}
-path <- paste0(getwd(), "/images/SO-wars.png")
+path <- paste0(getwd(), "/images/SO-wars.PNG")
 knitr::include_graphics(path)
 ```
 
@@ -588,7 +588,7 @@ He points out that most people's data is just not that big. Less than 10% work w
 data larger than 8 Terabytes.
 
 ```{r, out.width = "500px"}
-path <- paste0(getwd(), "/images/szilard-data-size.png")
+path <- paste0(getwd(), "/images/szilard-data-size.PNG")
 knitr::include_graphics(path)
 ```
 
@@ -614,7 +614,7 @@ bigger data into the cloud.
 
 
 ```{r, out.width = "300px"}
-path <- paste0(getwd(), "/images/szilard-ram-size.png")
+path <- paste0(getwd(), "/images/szilard-ram-size.PNG")
 knitr::include_graphics(path)
 ```
 
