@@ -515,19 +515,21 @@ General discussion
 
 # R and Data Science in Practice
 
-## An R Projects workflow {.smaller}
+## An R Projects workflow {.smaller .columns-2}
 
-```{r, out.width = "666px", fig.align="center"}
-path <- paste0(getwd(), "/images/DS-Workflow.png")
-knitr::include_graphics(path)
-```
-**First Mile**: _Import_ data and prepare for Analysis. Hadley Wickham's [_Tidy_ Data:](https://www.jstatsoft.org/article/view/v059i10) Each variable is a column, each observation is a row, and each type of observational unit is a table. Alot of time is spent here.
 
-**Data Analysis**: _Transform_ data and create new variables with `log`, `exponents`, differencing, etc. _Visualizations_ help spot outliers, remaining data problems, and reveal insights to test with _Models_. Predictive modeling frameworks like [Max Kuhn's `caret`](https://topepo.github.io/caret/index.html) provide tools to quickly iterate over the entire process.
+**First Mile**: _Import_ data and prepare for Analysis. Clean data, ach variable is a column, each observation is a row, and each type of observational unit is a table. Alot of time is spent here.
+
+**Data Analysis**: _Transform_ data and create new variables with `log`, `exponents`, differencing, etc. _Visualizations_ help spot outliers, remaining data problems, and reveal insights to test with _Models_. Predictive modeling frameworks like the [mlr (Machine Learning in R) package ](https://mlr.mlr-org.com/) provide tools to quickly iterate over the entire process.
 
 **Last Mile**: _Communicate_ results with visualizations and good writing, exporting to static or interactive documents, webpages, apps, or presentation slides. Packages like [R Markdown](https://rmarkdown.rstudio.com/gallery.html) provides the scaffolding.
 
-[Image Source: R for Data Science](http://r4ds.had.co.nz/introduction.html)
+```{r, out.width = "400px", fig.align="center"}
+path <- paste0(getwd(), "/images/Practical-Data-Science-project-workflow.jpg")
+knitr::include_graphics(path)
+```
+
+[Image Source: Practical Data Science with R](https://www.manning.com/books/practical-data-science-with-r-second-edition)
 
 
 ## What about 'Big Data' and R? {.smaller .columns-2}
