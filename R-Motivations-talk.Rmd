@@ -191,26 +191,26 @@ path <- paste0(getwd(), "/images/burtch-Preference-2019.png")
 knitr::include_graphics(path)
 ```
 
-## IEEE, general language rankings {.columns-2 .smaller}
+## IEEE, 2018 Top Programming languages {.columns-2 .smaller}
 
 
 Amazingly, in the wider world of programming languages, the `R Statistical Programming language`,
-created by Data Scientists for **Data Scientists**, makes the "top 10" general programming language cut, reflecting it's growing use across scientific domains, business sectors, and Enterprises. It is very surprising for a specialized language to rank so high.
+created by Data Scientists for **Data Scientists**, makes the "top 10" general programming language cut under the **Enterprise Catagory**, reflecting it's growing use across scientific domains, business sectors, and Enterprises. It is very surprising for a specialized language to rank so high.
 
 
-`Python`'s popularity is mainly due to it's high use in Web site development, DevOps, and the west coast technology industry in general. Technology is the fastest growing sector in the economy at present. Use in web development and recent adaptation in **Data Science** has put it on top.
+`Python`'s popularity is due to it's high use in Web site development, DevOps, and as a general programming language. Use in web development and recent adaptation in **Data Science** has put it on top.
 
 
 `C` and `C++` remains a stalwarts, and underpins `R`. 
 Side note: R package developers use `C` and `C++` to speed up `R`.
 
 ```{r, out.width = "500px"}
-path <- paste0(getwd(), "/images/ieee-10.PNG")
+path <- paste0(getwd(), "/images/ieee-10-2018.PNG")
 knitr::include_graphics(path)
 ```
 
-[Source: IEEE 2017 top programming languages](https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages)
-[Source: IEEE Design, Methods, and Data Sources](https://spectrum.ieee.org/ns/IEEE_TPL_2017/methods.html)
+[Source: IEEE 2018 top programming languages](https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2018)
+[Source: IEEE 2018 Design, Methods, and Data](https://spectrum.ieee.org/static/ieee-top-programming-languages-2018-methods)
 
 
 ## Stack overflow analysis of Top Languages {.smaller}
