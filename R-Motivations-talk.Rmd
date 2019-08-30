@@ -213,7 +213,7 @@ knitr::include_graphics(path)
 [Source: IEEE 2018 Design, Methods, and Data](https://spectrum.ieee.org/static/ieee-top-programming-languages-2018-methods)
 
 
-## Stack overflow analysis of Top Languages {.smaller}
+## Stackoverflow 2017 analysis of Languages {.smaller}
 
 Stack Overflow graphs done with `R` helps us visualize that `R` is growing fast! [Source](https://stackoverflow.blog/2017/09/14/python-growing-quickly
 )
@@ -295,22 +295,6 @@ knitr::include_graphics(path)
 ```
 
 https://cran.r-project.org/web/views/
-
-
-## R the least disliked Data Science Language! {.columns-2 .smaller}
-
-When choosing a first scripting language, narrow it down. Research your domain or industry and discover what the people and companies you are inspired by are using. Have your values and interests drive the process.
-
-_I've been a lifelong Mac and UNIX user, and nearly all of my programming in college and graduate school was centered around Python and R. Despite that, I was happy to join a company with a .NET stack, and I'm glad I did— because I loved the team, the product, and the data._ _**I can't speak for anyone else, but I'm glad I defined myself in terms of what work I wanted to do, and not something I wanted to avoid.**_ 
-
-**David Robinson, Data Scientist** @[stackoverflow](https://stackoverflow.com/). **Prefers R for Data Science**
-
-```{r, out.width = "600px"}
-path <- paste0(getwd(), "/images/SO-wars.PNG")
-knitr::include_graphics(path)
-```
-
-[Source: Disliked Programming Languages](https://stackoverflow.blog/2017/10/31/disliked-programming-languages/)
 
 
 # (Some) R and Data Science History
