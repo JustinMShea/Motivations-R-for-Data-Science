@@ -177,19 +177,17 @@ Burch works is a decades old Chicago based recruiting firm specializing in analy
 talent. The Survey of about 1000 is a "guesstimate"", reflecting their client base of 
 traditional Chicago companies.
 
+Results indicate `Python` the most popular, with `R` 2nd, and `SAS` 3rd and losing market share rapidly. Reflects a general shift to programming languages away from commercial analytics products.
 
-**Results indicate `R` the most popular, with `SAS` 2nd, and `Python` growing enormously. Reflects a general shift to programming languages and away from commercial analytics products.**
+**NOTE** Burchworks doesn't appear to be using best practices in Data Science, Reproducible Research, or Survey methods, creating much ire among data professionals every year! 
 
-Ironically, they don't use best practices in Data Science, Reproducible Research,
-or Survey methods, creating much ire among data professionals every year! 
-
-However, "Interesting" because its mostly local!
+So don't quote this as gospel!
 
 
-[Source: Full '2017 Burtchworks Survey' HERE](https://www.burtchworks.com/2017/06/19/2017-sas-r-python-flash-survey-results/)
+[Source: Full '2019 Burtchworks Survey' HERE](https://www.burtchworks.com/2019/08/21/2019-sas-r-or-python-survey-update-which-tool-do-data-scientists-analytics-pros-prefer/)
 
 ```{r, out.width = "500px"}
-path <- paste0(getwd(), "/images/burtch-Preference-over-four-years.png")
+path <- paste0(getwd(), "/images/burtch-Preference-2019.png")
 knitr::include_graphics(path)
 ```
 
