@@ -1,0 +1,10 @@
+---
+title: "Motivations: R for Data Science"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This repo contains a talk I give to motivate R for data science.
