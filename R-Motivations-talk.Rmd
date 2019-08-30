@@ -127,7 +127,7 @@ path <- paste0(getwd(), "/images/Josh-U-quote.png")
 knitr::include_graphics(path)
 ```
 
-Josh has it all: **Substantive expertise, Math & Statistics, and Data Hacking Skills:**
+Josh has: **Substantive expertise, Math & Statistics, and Data Hacking Skills:**
 
 - M.A. Economics, 2003, University of Missouri-St. Louis. Econometric (statistics) focus.
 
@@ -163,40 +163,8 @@ knitr::include_graphics(path)
 
 http://www.eusprig.org/horror-stories.htm
 
-## Good solutions to make spreadsheets safer {.columns-2 .smaller}
 
-- be consistent
-
-- write dates like YYYY-MM-DD
-
-- don't leave any cells empty
-
-- put just one thing in a cell
-
-- organize data with subjects as rows and variables as columns
-
-- create a data dictionary
-
-- don't include calculations in the raw data files
-
-- don't use font color or highlighting as data
-
-- choose good names for things
-
-- make backups
-
-- use data validation to avoid data entry errors
-
-- save the data in plain text file
-
-```{r, out.width = "350px", fig.align="center"}
-path <- paste0(getwd(), "/images/Broman-Woo.png")
-knitr::include_graphics(path)
-```
-
-[Source: Data organization in spreadsheets](https://peerj.com/preprints/3183/)
-
-## ...but move beyond spreadsheets
+## Move beyond spreadsheets
 
 _Although spreadsheet programs are used for small "scratchpad" applications, they are also used to develop many large applications. In recent years, we have learned a good deal about the errors that people make when they develop spreadsheets. In general, errors seem to occur in a few percent of all cells, meaning that for large spreadsheets, the issue is how many errors there are, not whether an error exists. These error rates, although troubling, are in line with those in programming and other human cognitive domains. In programming, we have learned to follow strict development disciplines to eliminate most errors._ - Raymond Panko 
 
