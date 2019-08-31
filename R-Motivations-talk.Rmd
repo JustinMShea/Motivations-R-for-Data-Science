@@ -423,7 +423,7 @@ knitr::include_graphics(path)
 
 ## Statistical/Machine Learning {.columns-2 .smaller}
 
-Bridges statistics and computer science. Many early innovators among `S` & `R` communities at Stanford and Bell Labs.
+Bridges statistics and computer science. Many early innovators among `S` & `R` communities at Stanford, Berkeley, and Bell Labs.
 
 **1984** Classification and Regression Trees
 
@@ -473,7 +473,7 @@ However extremely large licensing costs and proprietary source code doesn't allo
 
 *2000* John Chambers, core creator of the S Language
 
-_The essence of what we took from him in thinking about S, for example, can be summarized in another of his famous one-liners, which goes roughly like this:_
+_The essence of what we took from him (Tukey) in thinking about S, for example, can be summarized in another of his famous one-liners, which goes roughly like this:_
 
 **_Better to have an approximate answer to the right question than a precise answer to the wrong question._**
 
