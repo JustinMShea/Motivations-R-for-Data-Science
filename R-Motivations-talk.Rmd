@@ -538,7 +538,7 @@ General discussion
 ## An R Projects workflow {.smaller .columns-2}
 
 
-**First Mile**: _Import_ data and prepare for Analysis. Clean data, ach variable is a column, each observation is a row, and each type of observational unit is a table. Alot of time is spent here.
+**First Mile**: _Import_ data and prepare for Analysis. Clean and format data. For example, make each variable a column, each observation is a row, etc. Alot of time is spent here.
 
 **Data Analysis**: _Transform_ data and create new variables with `log`, `exponents`, differencing, etc. _Visualizations_ help spot outliers, remaining data problems, and reveal insights to test with _Models_. Predictive modeling frameworks like the [mlr (Machine Learning in R) package ](https://mlr.mlr-org.com/) provide tools to quickly iterate over the entire process.
 
