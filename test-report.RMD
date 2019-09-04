@@ -1,0 +1,78 @@
+---
+title: "Live intro to R markdown and workflow"
+author: "Justin S."
+date: "8/23/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+## Import Data
+
+
+```{r sp500, message=FALSE}
+library(quantmod)
+getSymbols("^GSPC")
+
+```
+
+## Explore Data
+
+```{r, message=FALSE}
+chartSeries(GSPC)
+```
+
+## Transform
+
+Lets explore percentage returns. 
+
+```{r}
+GSPC_percent <- diff(log(GSPC$GSPC.Close))
+plot(GSPC_percent)
+```
+
+
+## Data Cleaning
+
+Do we have any missing values? 
+```{r}
+sum(is.na(GSPC_percent))
+
+head(GSPC_percent)
+```
+
+Remove first missing value and check again
+
+```{r}
+GSPC_percent <- GSPC_percent[-1]
+
+sum(is.na(GSPC_percent))
+```
+
+## Modeling
+
+Use the base R autoregresive model. We've already log $d$ifferenced so we'll define the $d$ in the $p,d,q$ order as $0$.
+
+```{r}
+arima(GSPC_percent, order=c(1, 0, 1))
+```
+
+We could also use the `forecast` packages `auto.arima` function to fit the best model, based on AIC, AICc, and BIC diagnostics.
+
+```{r}
+library(forecast)
+auto.arima(GSPC_percent)
+```
+
+Note from the print out above, `auto.arima` also selects $d = 0$.
+
+
+
